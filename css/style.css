@@ -1,0 +1,154 @@
+/* header */
+
+header {
+  background-color: #333333;
+  height: 50px;
+  box-shadow: 0px 1px 1px #ccc;
+}
+
+header #header_detail {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+header #header_detail li {
+  color: #888;
+}
+header #header_detail li a{
+  padding: 15px;
+  font-size: 14px;
+  color: #eee;
+}
+header #header_detail li a:hover {
+  color: #2ead9b;
+}
+header #header_detail #h_mobile {
+  padding-right: 0;
+}
+header #header_detail #h_mobile::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 20px;
+  margin: 0px 4px -3px 0;
+  vertical-align: bottom;
+  background: url(../images/sprites.png) -160px -70px;
+}
+
+/* nav */
+
+nav {
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 70px;
+}
+
+nav #nav_list {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav #nav_list li {
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px 8px 12px;
+}
+/* 鼠标样式 */
+nav #nav_list li:hover {
+  color: #2ead9b;
+  border-bottom: 1px solid #2ead9b;
+  box-shadow: 1px 1px 1px #ccc;
+  border-radius: 4px;
+}
+
+nav #nav_search {
+  margin-right: 12px;
+  position: relative;
+}
+nav #nav_search input {
+  height: 30px;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 3px #ccc;
+  padding-left: 33px;
+} 
+nav #nav_search #nav_search_img {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/sprites.png) -79px -69px ;
+}
+
+nav #nav_car {
+  width: 23px;
+  height: 24px;
+  background: url(../images/sprites.png) -119px -69px ;
+}
+
+
+/* banner 部分 */
+
+/* 侧边框 */
+#banner_aside {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 2;
+}
+#banner_aside ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+#banner_aside ul li {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 36px;
+}
+#banner_aside ul li::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  width: 6px;
+  height: 11px;
+  background: url(../images/sprites.png) -40px -111px;
+}
+#banner_aside ul li:hover {
+  background-color:#2ead9b;
+}
+#banner_aside ul li a {
+  font-size: 16px;
+  color: #fdfdfd;
+}
+#banner_aside ul li a span{
+  font-size: 14px;
+}
+#banner_aside ul li a span:first-child {
+  padding-left: 14px ;
+}
+
