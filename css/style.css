@@ -14,6 +14,8 @@ header #header_detail {
   justify-content: flex-end;
   align-items: center;
   height: 50px;
+  background-color: #333333;
+
 }
 header #header_detail li {
   color: #888;
@@ -151,4 +153,156 @@ nav #nav_car {
 #banner_aside ul li a span:first-child {
   padding-left: 14px ;
 }
+/* 好物 */
+#hd {
+  height: 114px;
+  line-height: 114px;
+}
 
+ #hd h2 span{
+  font-size: 18px;
+  padding-left: 20px;
+}
+ #hd h2{
+  font-size: 28px;
+  color: #333;
+  font-weight: 400;
+}
+
+.more {
+  color: #777;
+  padding-left: 15px;
+}
+.more::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 11px;
+  margin-left: 13px;
+  background: url(../images/sprites.png) 0px -111px;
+}
+.more:hover {
+  color: #333
+}
+
+/* 好物列表 */
+
+#haowu #haowu_list {
+  display: flex;
+  clear: both;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#haowu #haowu_list li {
+  position: relative;
+  height: 405px;
+  width: 304px;
+  background-color: #f0f9f4;
+  /* box-shadow: 1px 1px 1px #333; */
+  transition: all .3s;
+}
+#haowu #haowu_list li img {
+  width: 100%;
+}
+
+#haowu #haowu_list li:hover {
+  /* top: -3px; */
+  transform: translate(0, -4px);
+  box-shadow: 0 3px 8px rgb(0 0 0 /40%);
+}
+
+.title {
+  padding: 16px;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+}
+.price {
+  font-size: 20px;
+  text-align: center;
+  color: red;
+}
+
+#sx #hd #tabs {
+  float: right;
+}
+#sx #hd #tabs li {
+  float: left;
+  margin: 0 15px;
+}
+#sx #hd #tabs li a{
+  padding: 5px;
+  background-color: #27ba9b;
+}
+
+#sx #sx_goods {
+  display: flex;
+}
+#sx #sx_goods aside {
+  margin-right: 6px;
+}
+#sx #sx_goods section {
+  flex: 1;
+  height: 610px;
+}
+#sx #sx_goods section ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 100%;
+}
+#sx #sx_goods section ul li {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: all .3s;
+}
+#sx #sx_goods section ul li img {
+  width: 184px;
+  height: 184px;
+  margin: auto;
+}
+.info {
+  padding: 0 30px;
+}
+.info .price {
+  text-align: left;
+  padding: 10px 0; 
+  margin-bottom: 10px;
+}
+.find {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 10px 0 15px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #27ba9b;
+  transition: all .4s;
+}
+.find p{
+  cursor: pointer;
+}
+.find p:first-child {
+  font-size: 18px;
+  width: 130px;
+  margin: auto;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+#sx #sx_goods section ul li:hover {
+  border: 2px solid #2ead9b;
+}
+#sx #sx_goods section ul li:hover .find {
+  transform: translateY(-88px);
+}
